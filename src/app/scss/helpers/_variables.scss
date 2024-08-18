@@ -1,0 +1,36 @@
+//? Основные цвета
+$white: #ffffff;
+$black: #111111;
+$blue: #2f80ed;
+$blue-hover: #1f5bb8;
+$gray: #d7d7d7;
+
+//? Z-index
+$header-z-index: 55;
+
+//? По умолчанию
+$base_fz: 16px; //? Размер шрифта по умолчанию 16px
+$base_ff: 'ProximaNova-Regular', sans-serif; //? Шрифт по умолчанию
+$base_bg: $white; //? Цвет фона по умолчанию
+$base_color: $black; //? Цвет текста по умолчанию
+
+//? Переменные семейств шрифтов
+$ff_PNb: 'ProximaNova-Bold', sans-serif;
+$ff_PNl: 'ProximaNova-Light', sans-serif;
+$ff_PNr: 'ProximaNova-Regular', sans-serif;
+$ff_PNsb: 'ProximaNova-Semibold', sans-serif;
+
+//? Стиль шрифтов
+$I: italic;
+$O: oblique;
+
+//? Толщина семейства шрифтов
+$th: 100; // Thin
+$el: 200; // Extra Light
+$l: 300; // Light
+$r: 400; // Regular
+$m: 500; // Medium
+$sb: 600; // SemiBold
+$b: 700; // Bold
+$eb: 800; // Extra Bold
+$bl: 900; // Super

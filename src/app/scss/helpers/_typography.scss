@@ -1,0 +1,122 @@
+// *================================================================
+//? Шрифты и заголовки
+// *================================================================
+
+// pro-nova semi-bold
+@mixin pro-nova-sbold18 {
+  font-family: $ff_PNsb;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 1.26px;
+}
+
+@mixin pro-nova-sbold17 {
+  font-family: $ff_PNsb;
+  font-size: 17px;
+  line-height: 100%;
+}
+
+@mixin pro-nova-sbold15 {
+  font-family: $ff_PNsb;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 1.05px;
+}
+
+@mixin pro-nova-sbold14 {
+  font-family: $ff_PNsb;
+  font-size: 14px;
+  line-height: 100%;
+}
+
+@mixin pro-nova-sbold13 {
+  font-family: $ff_PNsb;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 0.91px;
+}
+
+@mixin pro-nova-sbold12 {
+  font-family: $ff_PNsb;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.84px;
+}
+
+// pro-nova regular
+@mixin pro-nova-r34 {
+  font-family: $ff_PNr;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 2.38px;
+}
+
+@mixin pro-nova-r31 {
+  font-family: $ff_PNr;
+  font-size: 31px;
+  line-height: 140%;
+  letter-spacing: 2.17px;
+}
+
+@mixin pro-nova-r26 {
+  font-family: $ff_PNr;
+  font-size: 26px;
+  line-height: 140%;
+  letter-spacing: 1.82px;
+}
+
+@mixin pro-nova-r20 {
+  font-family: $ff_PNr;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 1.4px;
+}
+
+@mixin pro-nova-r19 {
+  font-family: $ff_PNr;
+  font-size: 19px;
+  line-height: 140%;
+  letter-spacing: 1.33px;
+}
+
+@mixin pro-nova-r18 {
+  font-family: $ff_PNr;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 1.26px;
+}
+
+@mixin pro-nova-r17 {
+  font-family: $ff_PNr;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: 1.19px;
+}
+
+@mixin pro-nova-r16 {
+  font-family: $ff_PNr;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 1.12px;
+}
+
+@mixin pro-nova-r13 {
+  font-family: $ff_PNr;
+  font-size: 13px;
+  line-height: 140%;
+  letter-spacing: 0.91px;
+}
+
+@mixin pro-nova-r12 {
+  font-family: $ff_PNr;
+  font-size: 12px;
+  line-height: 140%;
+  letter-spacing: 0.84px;
+}
+
+@mixin pro-nova-r11 {
+  font-family: $ff_PNr;
+  font-size: 11px;
+  line-height: 140%;
+  letter-spacing: 0.77px;
+}
