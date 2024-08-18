@@ -1,11 +1,6 @@
 @use 'sass:math';
 
-// Импорты стилей, css-фреймворков, переменных и т.п.
 @import './imports.scss';
-
-// -----------------------------------------------
-// --------------MAIN SETTINGS--------------------
-// -----------------------------------------------
 
 * {
   box-sizing: border-box;
@@ -50,26 +45,32 @@ body {
   > main {
     flex: 1 1 auto;
   }
-
-  // Фикс для слайдеров
-  > * {
-    min-width: 0;
-  }
 }
 
 // Отступ контентной части от шапки сайта
 .page {
-  margin-top: $header-height;
+  margin-top: 100px;
+  margin-bottom: 40px;
 
-  // .page__inner
-  &__inner {
-    display: flex;
-    justify-content: center;
+  @include media-extra-large {
+    margin-top: 131px;
+    margin-bottom: 80px;
   }
-}
 
-main,
-header {
+  @include media-large {
+    margin-top: 103px;
+    margin-bottom: 30px;
+  }
+
+  @include media-medium {
+    margin-top: 123px;
+    margin-bottom: 40px;
+  }
+
+  @include media-small {
+    margin-top: 81px;
+    margin-bottom: 20px;
+  }
 }
 
 h1,
@@ -112,51 +113,9 @@ textarea {
   }
 }
 
-// ------------------------------------------------
-// -------------------Buttons----------------------
-// ------------------------------------------------
-
 button {
   outline: none;
   border: transparent;
   background: transparent;
   cursor: pointer;
-}
-
-.btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-// ------------------------------------------------
-// -------------------Reused-----------------------
-// ------------------------------------------------
-
-// ------------------------------------------------
-// -----------------KEYFRAMES----------------------
-// ------------------------------------------------
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  100% {
-    opacity: 1;
-    visibility: visible;
-  }
 }

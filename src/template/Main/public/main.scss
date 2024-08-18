@@ -1,7 +1,8 @@
 //* Global Styles
 @import './../../../app/scss/global.scss';
 //? Common Components
-@import './../../../components/Common/header/export/header.scss';
+@import './../../../components/Common/header/header.scss';
 
-//? Chapter Unique Components
 //? Sections
+@import './../sections/banner-info/banner-info.scss';
+@import './../sections/description/description.scss';

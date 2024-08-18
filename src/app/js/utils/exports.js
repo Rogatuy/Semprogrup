@@ -16,27 +16,6 @@ export const fn = {
     return element.offsetHeight;
   },
 
-  // функции скрывания и появления элементов
-  unfadeEffect(el, timeout, display) {
-    el.style.opacity = 0;
-    el.style.display = display || 'block';
-    el.style.transition = `opacity ${timeout}ms`;
-
-    setTimeout(() => {
-      el.style.opacity = 1;
-    }, 10);
-  },
-
-  fadeEffect(el, timeout) {
-    el.style.opacity = 1;
-    el.style.transition = `opacity ${timeout}ms`;
-    el.style.opacity = 0;
-
-    setTimeout(() => {
-      el.style.display = 'none';
-    }, timeout);
-  },
-
   resetBodyOffset() {
     const body = document.body;
     const fixedElements = document.querySelectorAll('.fixed');
