@@ -152,7 +152,12 @@
     }
 
     @include media-medium {
-      padding-top: 56px;
+      padding-top: 50px;
+      margin-right: 10px;
+    }
+
+    @include media-small {
+      padding-top: 57px;
       margin-right: 0;
     }
   }

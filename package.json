@@ -93,8 +93,10 @@
     "yargs": "^17.7.1"
   },
   "dependencies": {
+    "imask": "^7.6.1",
     "prismjs": "^1.29.0",
-    "simplebar": "^6.2.5",
+    "simplebar": "^6.2.7",
+    "smooth-scrollbar": "^8.8.4",
     "swiper": "^10.1.0"
   }
 }

@@ -1,0 +1,18 @@
+<div class="order-call-popup" data-popup="order-call-popup">
+  <div class="order-call-popup__content order-call">
+    <button class="close-popup"></button>
+    <div class="order-call__inner">
+      <h2>Заказать звонок</h2>
+      <form class="order-call__form call-form">
+        <div class="call-form__inputs">
+            @@loop('components/Shared/Inputs/input.html',
+            './../../components/Shared/Inputs/json/order-call.json')
+        </div>
+        <p class="call-form__link">
+          Нажимая на кнопку «Отправить», вы ознакомлены <span><br></span> и&nbsp;подтверждаете согласие с <a href="#">политикой обработки персональных данных</a>
+        </p>
+        <button type="submit" class="call-form__submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</div>

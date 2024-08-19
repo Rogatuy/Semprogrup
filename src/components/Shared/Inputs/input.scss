@@ -1,0 +1,113 @@
+.input-block {
+  &.not-empty {
+    & .input-block__placeholder {
+      transform: translateY(-100%);
+      @include pro-nova-r13;
+
+      @include media-extra-large {
+        @include pro-nova-r14;
+      }
+
+      @include media-large {
+        @include pro-nova-r11;
+      }
+
+      @include media-small {
+        @include pro-nova-r8;
+      }
+    }
+  }
+
+  &.error {
+    & .input-block__error-text {
+      display: block;
+    }
+
+    & .input-block__input {
+      border-color: $red;
+    }
+  }
+  // .input-block__label
+  &__label {
+    position: relative;
+    display: flex;
+  }
+
+  // .input-block__input
+  &__input {
+    width: 100%;
+    height: 31px;
+    @include pro-nova-r16;
+    color: $black;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:focus {
+      & + .input-block__placeholder {
+        transform: translateY(-100%);
+        @include pro-nova-r13;
+
+        @include media-extra-large {
+          @include pro-nova-r14;
+        }
+
+        @include media-large {
+          @include pro-nova-r11;
+        }
+
+        @include media-small {
+          @include pro-nova-r8;
+        }
+      }
+    }
+
+    @include media-extra-large {
+      height: 33px;
+      @include pro-nova-r17;
+    }
+
+    @include media-large {
+      height: 27px;
+      @include pro-nova-r14;
+    }
+
+    @include media-small {
+      height: 22px;
+      @include pro-nova-r11;
+    }
+  }
+
+  // .input-block__placeholder
+  &__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include pro-nova-r16;
+    letter-spacing: unset;
+    color: $black;
+    text-transform: uppercase;
+    @include defaultTransition;
+
+    @include media-extra-large {
+      @include pro-nova-r17;
+    }
+
+    @include media-large {
+      @include pro-nova-r14;
+    }
+
+    @include media-small {
+      @include pro-nova-r11;
+    }
+  }
+
+  // .input-block__error-text
+  &__error-text {
+    position: absolute;
+    right: 0;
+    bottom: -70%;
+    @include pro-nova-r11;
+    color: $red;
+    display: none;
+  }
+}

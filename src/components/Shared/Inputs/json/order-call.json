@@ -1,0 +1,20 @@
+[
+  {
+    "id": "name-input",
+    "type": "text",
+    "placeholder": "Ваше имя",
+    "name": "call-name"
+  },
+  {
+    "id": "phone-input",
+    "type": "text",
+    "placeholder": "Телефон",
+    "name": "call-phone"
+  },
+  {
+    "id": "email-input",
+    "type": "text",
+    "placeholder": "E-mail",
+    "name": "call-email"
+  }
+]

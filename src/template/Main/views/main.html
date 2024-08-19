@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('components/Common/head/head.html', { 'title': 'Главная', 'css':
+@@include('components/Common/head/head.html', { 'title': 'Semprogroup test', 'css':
 'main' })
 
-<body>
+<body data-simplebar>
   <div class="full-wrapper">
     @@include('components/Common/header/header.html')
     <main class="page">
@@ -13,8 +13,8 @@
   </div>
 
   <!-- Modals -->
-  <!-- Preloader -->
-
+  @@include('components/Shared/Popups/order-call-popup/order-call.html')
+  @@include('components/Shared/Popups/video-popup/video.html')
 
   <!-- page scripts -->
   <script src="../styles/js/main.min.js"></script>

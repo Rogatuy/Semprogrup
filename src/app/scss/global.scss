@@ -7,7 +7,60 @@
   margin: 0;
   padding: 0;
   line-height: 100%;
+  // -webkit-tap-highlight-color: transparent;
+
+  // &::-moz-scrollbar {
+  //   width: 0px;
+  //   height: 0px;
+  // }
+
+  // // Chrome, Edge, and Safari
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
+
+  // &::-webkit-scrollbar-track {
+  //   display: none;
+  //   box-shadow: none;
+  //   border-radius: 0;
+  //   background: transparent;
+  // }
+
+  // &::-webkit-scrollbar-thumb {
+  //   display: none;
+  //   border-radius: 0px;
+  //   border: 0px none transparent;
+  //   background-color: transparent;
+  //   -webkit-transition: all 280ms ease-in-out;
+  //   transition: all 280ms ease-in-out;
+
+  //   &:hover {
+  //     background-color: transparent;
+  //   }
+  // }
 }
+
+// .custom-scrollbar {
+//   & .simplebar-scrollbar::before {
+//     right: 0;
+//     left: unset;
+//     width: 3px;
+//     border-radius: 2px;
+//     background-color: #4b4f58;
+//   }
+
+//   & .simplebar-scrollbar.simplebar-visible::before {
+//     background-color: #4b4f58;
+//     border-radius: 3px;
+//     opacity: 1;
+//   }
+
+//   & .simplebar-content-wrapper {
+//     @media screen and (max-width: $tablet) {
+//       padding-right: 10px;
+//     }
+//   }
+// }
 
 body {
   display: flex;
@@ -18,7 +71,7 @@ body {
   font-style: normal;
   color: $base_color;
   background: $base_bg;
-  overflow-x: hidden;
+  overflow: auto;
   backface-visibility: hidden;
   line-height: 1;
   -webkit-backface-visibility: hidden;
@@ -107,6 +160,10 @@ ol {
 
 input,
 textarea {
+  outline: none;
+  border: transparent;
+  background: transparent;
+
   &:focus,
   :active {
     outline: none;

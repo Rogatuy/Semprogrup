@@ -2,7 +2,9 @@
 @import './../../../app/scss/global.scss';
 //? Common Components
 @import './../../../components/Common/header/header.scss';
-
+//? Shared Components
+@import './../../../components/Shared/Popups/order-call-popup/order-call.scss';
+@import './../../../components/Shared/Popups/video-popup/video.scss';
 //? Sections
 @import './../sections/banner-info/banner-info.scss';
 @import './../sections/description/description.scss';

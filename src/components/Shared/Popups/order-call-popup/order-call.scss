@@ -1,0 +1,229 @@
+@import './../../Inputs/input.scss';
+
+.order-call-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  background: $white;
+  visibility: hidden;
+  @include defaultTransition;
+  z-index: 60;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 60;
+  }
+
+  // .order-call-popup__content
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.order-call {
+  // .order-call__inner
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 0;
+
+    width: 100%;
+    max-width: 454px;
+
+    @include media-extra-large {
+      max-width: 587px;
+    }
+
+    @include media-large {
+      max-width: 370px;
+    }
+
+    @include media-medium {
+      max-width: 438px;
+    }
+
+    @include media-small {
+      max-width: 100%;
+      padding: 20px;
+    }
+  }
+
+  & h2 {
+    color: $black;
+    @include pro-nova-r40;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    @include media-extra-large {
+      @include pro-nova-r52;
+      margin-bottom: 80px;
+    }
+
+    @include media-large {
+      @include pro-nova-r28;
+    }
+
+    @include media-medium {
+      @include pro-nova-r28;
+    }
+
+    @include media-small {
+      width: 100%;
+      margin-left: 20px;
+      text-align: start;
+      @include pro-nova-r20;
+      margin-bottom: 30px;
+      line-height: 140%;
+    }
+  }
+
+  // .order-call__form
+  &__form {
+  }
+}
+
+.close-popup {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  width: 26px;
+  height: 26px;
+  background-image: url('../../assets/images/icons/cross.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include media-large {
+    top: 50px;
+    right: 50px;
+  }
+
+  @include media-medium {
+    top: 40px;
+    right: 40px;
+  }
+
+  @include media-small {
+    top: 20px;
+    right: 20px;
+  }
+}
+
+.call-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  // .call-form__inputs
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 100%;
+    margin-bottom: 50px;
+
+    @include media-extra-large {
+      gap: 49px;
+    }
+
+    @include media-large {
+      gap: 45px;
+    }
+
+    @include media-small {
+      gap: 41px;
+      margin-bottom: 40px;
+    }
+  }
+
+  // .call-form__link
+  &__link {
+    width: 100%;
+    max-width: 454px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    @include pro-nova-r12;
+    margin-bottom: 30px;
+
+    & span {
+      display: flex;
+
+      @include media-large {
+        display: none;
+      }
+    }
+
+    @include media-extra-large {
+      @include pro-nova-r14;
+      max-width: 500px;
+    }
+
+    @include media-large {
+      @include pro-nova-r11;
+      max-width: 100%;
+    }
+
+    @include media-medium {
+      max-width: 370px;
+    }
+
+    @include media-small {
+      @include pro-nova-r12;
+      margin-bottom: 20px;
+    }
+
+    & a {
+      text-decoration: underline;
+    }
+  }
+
+  // .call-form__submit
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 24px 69px;
+    color: $white;
+    text-transform: uppercase;
+    @include pro-nova-sb14;
+    letter-spacing: 0.98px;
+
+    background-color: $blue;
+    border-radius: 100px;
+    @include defaultTransition;
+
+    @include hover {
+      background-color: $blue-hover;
+    }
+
+    @include media-extra-large {
+      @include pro-nova-sb15;
+      padding: 24px 69px;
+    }
+
+    @include media-large {
+      padding: 20px 40px;
+    }
+
+    @include media-small {
+      @include pro-nova-sb11;
+      padding: 18px 50px;
+    }
+  }
+}

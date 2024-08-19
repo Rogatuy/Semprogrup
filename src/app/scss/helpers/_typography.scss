@@ -38,6 +38,13 @@
   letter-spacing: 0.84px;
 }
 
+@mixin pro-nova-sb11 {
+  font-family: $ff_PNsb;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 0.77px;
+}
+
 @mixin pro-nova-sb10 {
   font-family: $ff_PNsb;
   font-size: 10px;
@@ -45,6 +52,18 @@
 }
 
 // pro-nova regular
+@mixin pro-nova-r52 {
+  font-family: $ff_PNr;
+  font-size: 52px;
+  line-height: 120%;
+}
+
+@mixin pro-nova-r40 {
+  font-family: $ff_PNr;
+  font-size: 40px;
+  line-height: 120%;
+}
+
 @mixin pro-nova-r34 {
   font-family: $ff_PNr;
   font-size: 34px;
@@ -54,6 +73,12 @@
 @mixin pro-nova-r31 {
   font-family: $ff_PNr;
   font-size: 31px;
+  line-height: 140%;
+}
+
+@mixin pro-nova-r28 {
+  font-family: $ff_PNr;
+  font-size: 28px;
   line-height: 140%;
 }
 
@@ -121,5 +146,11 @@
 @mixin pro-nova-r10 {
   font-family: $ff_PNr;
   font-size: 10px;
+  line-height: 140%;
+}
+
+@mixin pro-nova-r8 {
+  font-family: $ff_PNr;
+  font-size: 8px;
   line-height: 140%;
 }
