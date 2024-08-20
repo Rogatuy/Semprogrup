@@ -1,16 +1,60 @@
 .banner-info {
-  height: calc(100vh - 100px);
-
   &__inner {
     flex-direction: column;
     display: flex;
     width: 100%;
-    height: 100%;
+    height: calc((var(--vh, 1vh) * 100) - 100px);
+
+    @include media-extra-large {
+      height: calc((var(--vh, 1vh) * 100) - 131px);
+    }
+
+    @include media-large {
+      height: calc((var(--vh, 1vh) * 100) - 103px);
+    }
+
+    @include media-medium {
+      height: calc((var(--vh, 1vh) * 100) - 123px);
+    }
+
+    @include media-small {
+      height: calc((var(--vh, 1vh) * 100) - 81px);
+    }
   }
 
   &__image {
-    flex: 1 1 auto; /* Картинка занимает оставшееся пространство */
-    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 506px;
+    height: calc((var(--vh, 1vh) * 100) - 364px);
+
+    @include media-extra-large {
+      max-height: 600px;
+      height: calc((var(--vh, 1vh) * 100) - 480px);
+    }
+
+    @include media-large {
+      max-height: 411px;
+      height: calc((var(--vh, 1vh) * 100) - 347px);
+    }
+
+    @include media-medium {
+      max-height: 487px;
+      height: calc((var(--vh, 1vh) * 100) - 477px);
+    }
+
+    @include media-small {
+      max-height: 100%;
+      height: calc((var(--vh, 1vh) * 100) - 267px);
+    }
+
+    & picture,
+    & img {
+      width: auto;
+      max-width: auto;
+      height: 100%;
+      object-fit: contain;
+    }
   }
   // .banner-info__description
   &__description {
